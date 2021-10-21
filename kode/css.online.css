@@ -1,0 +1,282 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+:root {
+  /* farver */
+  --black: #191919;
+  --white: #ffffff;
+  --beige: #c9b1a7;
+  --lilla: #bcb3d1;
+  --orange: #e28a2b;
+  --navy: #304475;
+  --brun: #7c6757;
+
+  /* fonte */
+/* Overskrifter */
+  --right: 'Josefin Sans', sans-serif;
+
+  }
+
+#header{
+    width: 110%;
+    height: 200px;
+    background-color:#dcc6ec;
+    display: block;
+    font-family: Josefin Sans;
+    color: #e28a2b;
+    font-size: 35px;
+    padding-left: 20px;
+}
+
+/* Logo i venstre hjørne styles  */
+#logo{
+  padding-top: 0px;
+  padding-left: 10px;
+  position:absolute;
+}
+
+/* Menulinje styles */
+
+.menu{
+  background-color: #dcc6ec;
+  text-align: right;
+  height: 100px;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-flex;
+}
+
+.menu ul li{
+  width: auto;
+  margin: 20px;
+  padding: 10px;
+}
+
+.menu ul li a{
+  text-decoration: none;
+  color: var(--navy);
+  font-family: 'Josefin sans';
+  font-size: 20px
+}
+
+.genbrug, .menu ul li:hover{
+  background-color: var(--white);
+}
+
+
+/* dropdown menu styles  */
+.submenu1{
+  display: none;
+}
+
+.menu ul li:hover .submenu1{
+  display: block;
+  position: absolute;
+  background-color: var(--white);
+  margin-top: 5px;
+  margin-left: -10px;
+}
+
+.menu ul li:hover .submenu1 ul{
+  display: block;
+  margin: 10px;
+}
+
+.menu ul li:hover .submenu1 ul li{
+  width: 150px;
+  padding: 10px;
+  border-bottom: 2px solid var(--white);
+  background: transparent;
+  text-align: left;
+}
+
+.menu ul li:hover .submenu1 ul li a:hover{
+  color: var(--grey);
+}
+
+/* Introduktion */
+h1 {
+text-align: center;
+font-family: 'Josefin san',sans-serif;
+color: var(--navy);
+font-weight: 300;
+font-size: 40px;
+padding-top: 50px;
+
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Josefin sans', sans-serif;
+  font-weight: 400;
+  color: var(--navy);
+  font-size: 25px;
+  padding-top: 50px;
+}
+
+/* Flexbox styles  */
+
+
+.nav ul li{
+  float: left;
+  list-style: none;
+  position: relative;
+
+}
+
+.nav ul li a{
+  font-family: "Josefin Sans";
+  font-size: 40px;
+  padding: 24px 14px;
+  display: block;
+}
+
+.artikel h2{
+  display: block;
+  position: relative;
+  padding: 20px 14px;
+}
+
+.nav ul li ul{
+  display: block;
+  position: absolute;
+  background-color: #dcc6ec;
+}
+
+/* flexbox til artikler  */
+
+/* butikflex til forside  */
+.butikflex{
+  display: flex;
+    background-color: #dcc6ec;
+    font-family: "Josefin Sans";
+}
+
+/* butikflex til artikel*/
+.butikflex2{
+  display: flex;
+    background-color: #ffffff;
+    font-family: "Josefin Sans";
+
+}
+
+.flexbox-container {
+    display: flex;
+}
+
+.flexbox-item-1 {
+  min-height: 100px;
+}
+
+.flexbox-item-2 {
+  min-height: 200px;
+}
+
+/* artikeltil forside */
+.artikel{
+  margin: 65px;
+  padding-top: 15px;
+  background-color: white;
+  width: 40%;
+  height: 100px;
+  text-align: center;
+  height: 450px;
+}
+
+/* artikel til Totebag */
+.artikel2{
+  margin: 65px;
+  padding-top: 15px;
+  background-color: #dcc6ec;
+  width: 40%;
+  height: 100px;
+  text-align: center;
+  height: 450px;
+}
+
+.artikel3{
+  margin: 0px;
+  padding-top: 10px;
+  background-color:#dcc6ec;
+  width: 100%;
+  text-align: center;
+  height: 320px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: var(--navy);
+  font-size: 25px;
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.artikel knap {
+  margin-left: -10px;
+  width: 90%;
+  display: block;
+  position: relative;
+  padding: 10px 14px;
+}
+
+.headercenter {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 15%;
+}
+
+/*kolonner med Billeder/artikler styles*/
+
+.row{
+  display: flex;
+  width: 100%;
+}
+
+.row2{
+  display: flex;
+  width: 100%;
+  background-color: #dcc6ec;
+  float: right;
+
+}
+
+.column left {
+  float: lef;
+  width: 50%;
+
+}
+
+.column right{
+  display: center;
+  width: 50%;
+
+}
+
+
+
+.artikel {
+  font-size: 16px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  color: var(--navy);
+  text-align: left;
+  float:right;
+}
+
+#footer{
+  background-color: #dcc6ec;
+  height: 170px;
+  font-family: Josefin sans;
+  font-size: 20px;
+  text-align: center;
+
+}
